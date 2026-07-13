@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metatrader5-stubs"
+version = "0.1.0"
+authors = [
+  { name="heunle23", email="152692963+heunle23@users.noreply.github.com" },
+]
+description = "Unofficial PEP 561 type stubs for the MetaTrader5 Python package"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Typing :: Stubs Only",
+]
+
+[project.urls]
+Homepage = "https://github.com/heunle23/MetaTrader5-stubs"
+Issues = "https://github.com/heunle23/MetaTrader5-stubs/issues"
+
+[tool.setuptools.packages.find]
+include = ["MetaTrader5-stubs*"]
+
+[tool.setuptools.package-data]
+"MetaTrader5-stubs" = ["*.pyi"]
